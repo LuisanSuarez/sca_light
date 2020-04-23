@@ -1,0 +1,12 @@
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-body {
+  flex: 1;
+  // TODO: get rid of this. working when icons didnt animate
+  position: absolute;
+  top: -2px;
+  left: 50px;
+}

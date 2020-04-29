@@ -4,17 +4,35 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <h1>FOOTER</h1>
-      <Link to="/">Home</Link>
+      {/* <h1>FOOTER</h1> */}
+      {/* <Link to="/">Home</Link>
       <Link to="/nosotros">Sobre Nosotros</Link>
       <Link to="/servicios">Servicios</Link>
       <Link to="/contacto">Contacto</Link>
-      <Link to="/blog">Aprende mas</Link>
+      <Link to="/blog">Aprende mas</Link> */}
 
-      <footer className="footer">
-        <div className="container-fluid px-lg-5">
-          <div className="row">
-            <div className="col-md-12 py-md-5 py-4 aside-stretch-right pl-lg-5">
+      <footer className="footer vh-100">
+        <div className="container-fluid px-lg-5 d-flex flex-column justify-content-end h-100">
+          <div className="row flex-grow-1">
+            <div className="col-md-12 pt-md-5 pt-4 px-lg-5">
+              <h2>
+                Escríbenos. Este mes tenemos{" "}
+                <span className="highlight">ofertas especiales</span>
+              </h2>
+              <h3>Deja tu contabilidad en manos de profesionales</h3>
+              <div className="price-icons d-flex justify-content-center">
+                <div className="profesional-icon"></div>
+                <div className="pequeño-icon"></div>
+              </div>
+              <div className="contact-info">
+                <h4>hola@scacontabilidad.com</h4>
+                <h4>+502 5766 5129</h4>
+              </div>
+            </div>
+            <div
+              className="col-md-4 py-md-5 py-4 aside-stretch-right pl-lg-5"
+              style={{ display: "none" }}
+            >
               <h2 className="footer-heading">Free consultation</h2>
               <form action="#" className="form-consultation">
                 <div className="form-group">
@@ -56,11 +74,45 @@ const Footer = () => {
               </form>
             </div>
           </div>
-          <div className="col-md-12 py-5">
-            <div className="row">
+          <div className="col-md-12 py-5" style={{ flexBasis: "auto" }}>
+            <div className="row ">
               <div className="col-md-12">
                 <div className="row justify-content-center">
                   <div className="col-md-12 col-lg-10">
+                    <div className="row justify-content-center">
+                      <ul className="ftco-footer-social p-0">
+                        <li className="ftco-animate fadeInUp ftco-animated">
+                          <a
+                            href="#"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Twitter"
+                          >
+                            <span className="fa fa-twitter"></span>
+                          </a>
+                        </li>
+                        <li className="ftco-animate fadeInUp ftco-animated">
+                          <a
+                            href="#"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Facebook"
+                          >
+                            <span className="fa fa-facebook"></span>
+                          </a>
+                        </li>
+                        <li className="ftco-animate fadeInUp ftco-animated">
+                          <a
+                            href="#"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Instagram"
+                          >
+                            <span className="fa fa-instagram"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                     <div className="row">
                       <div className="col-md-3 mb-md-0 mb-3">
                         <Link to="/inicio">
@@ -70,38 +122,6 @@ const Footer = () => {
                           {/* A small river named Duden flows by their place and supplies
                     it with the necessary regelialia. */}
                         </p>
-                        <ul className="ftco-footer-social p-0">
-                          <li className="ftco-animate fadeInUp ftco-animated">
-                            <a
-                              href="#"
-                              data-toggle="tooltip"
-                              data-placement="top"
-                              title="Twitter"
-                            >
-                              <span className="fa fa-twitter"></span>
-                            </a>
-                          </li>
-                          <li className="ftco-animate fadeInUp ftco-animated">
-                            <a
-                              href="#"
-                              data-toggle="tooltip"
-                              data-placement="top"
-                              title="Facebook"
-                            >
-                              <span className="fa fa-facebook"></span>
-                            </a>
-                          </li>
-                          <li className="ftco-animate fadeInUp ftco-animated">
-                            <a
-                              href="#"
-                              data-toggle="tooltip"
-                              data-placement="top"
-                              title="Instagram"
-                            >
-                              <span className="fa fa-instagram"></span>
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                       <div className="col-md-3 mb-md-0 mb-3">
                         <Link to="/nosotros">
@@ -196,6 +216,11 @@ const Footer = () => {
 					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							</div>
 						</div> */}
+          </div>
+          <div className="row bg-brown justify-content-center">
+            <div className="row">
+              <h3>Contabilidad hecha por profesionales para profesionales</h3>
+            </div>
           </div>
         </div>
       </footer>

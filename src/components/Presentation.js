@@ -14,30 +14,32 @@ export default function Presentation() {
             </div>
             <div className="col-md-6 pl-md-5 py-md-5">
               <div className="heading-section pl-md-4 pt-md-5">
-                <span className="subheading">Welcome to Accounting</span>
-                <h2 className="mb-4">We Are the Best Accounting Agency</h2>
-              </div>
-              <div className="services-2 w-100 d-flex">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-wealth"></span>
-                </div>
-                <div className="text pl-4">
-                  <h4>Market Analysis</h4>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
-                  </p>
-                </div>
+                <h2 className="mb-4">
+                  Contabilidad para profesionales ocupados
+                </h2>
+                <span className="subheading">{"   "}</span>
               </div>
               <div className="services-2 w-100 d-flex">
                 <div className="icon d-flex align-items-center justify-content-center">
                   <span className="flaticon-accountant"></span>
                 </div>
                 <div className="text pl-4">
-                  <h4>Accounting Advisor</h4>
+                  <h4>Presentamos tus formularios</h4>
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
+                    Nunca más visitarás el portal de la SAT. Deja la
+                    contabilidad a los profesionales que lo disfrutan.
+                  </p>
+                </div>
+              </div>
+              <div className="services-2 w-100 d-flex">
+                <div className="icon d-flex align-items-center justify-content-center">
+                  <span className="flaticon-wealth"></span>
+                </div>
+                <div className="text pl-4">
+                  <h4>Te devolvemos tu IVA</h4>
+                  <p>
+                    Tienes derecho a recuperar dinero que ya pagaste en
+                    impuestos. Calculamos cuánto dinero te pertenece al centavo.
                   </p>
                 </div>
               </div>
@@ -46,10 +48,10 @@ export default function Presentation() {
                   <span className="flaticon-teamwork"></span>
                 </div>
                 <div className="text pl-4">
-                  <h4>General Consultancy</h4>
+                  <h4>Recogemos tus facturas</h4>
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
+                    Incluido en nuestro precio. Mensajero, por correo, por
+                    whatsapp. Cómo tu prefieras, nosotros te acomodamos.
                   </p>
                 </div>
               </div>
@@ -58,10 +60,10 @@ export default function Presentation() {
                   <span className="flaticon-accounting"></span>
                 </div>
                 <div className="text pl-4">
-                  <h4>Structured Assestment</h4>
+                  <h4>Puntual. Preciso. Transparente</h4>
                   <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia
+                    Trabajamos rápido. Calculamos al centavo. Al pie de la letra
+                    de la ley, y puedes revisar tus datos en cualquier momento.
                   </p>
                 </div>
               </div>

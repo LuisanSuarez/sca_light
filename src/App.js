@@ -9,13 +9,16 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import Blog from "./components/Blog";
+import BlogSection from "./components/BlogSection";
+// import Blog from "./components/Blog";
 
 function App() {
   return (
     <Router>
       <div>
         <Header />
+        {/* <Home /> */}
+
         {/* <nav>
         <ul>
           <li>
@@ -36,7 +39,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/nosotros">
+          {/* <Route path="/nosotros">
             <About />
           </Route>
           <Route path="/servicios">
@@ -44,9 +47,10 @@ function App() {
           </Route>
           <Route path="/contacto">
             <Contact />
-          </Route>
-          <Route path="/blog">
-            <Blog />
+          </Route> */}
+          <Route exact path="/blog">
+            {/* <Blog /> */}
+            <Home />
           </Route>
         </Switch>
         <Footer />

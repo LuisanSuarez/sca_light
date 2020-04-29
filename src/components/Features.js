@@ -11,10 +11,10 @@ export default function Features() {
                 <span className="flaticon-accounting-1"></span>
               </div>
               <div className="media-body">
-                <h3 className="heading">Accounting</h3>
+                <h3 className="heading">Digitalizado</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Obtén acceso a tus libros con un click. Disponibles online,
+                  listos para imprimir.
                 </p>
               </div>
             </div>
@@ -25,10 +25,10 @@ export default function Features() {
                 <span className="flaticon-tax"></span>
               </div>
               <div className="media-body">
-                <h3 className="heading">Tax, Compliance &amp; Payroll</h3>
+                <h3 className="heading">Actualizados con la Ley</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Mantenemos a todo el equipo informado de lo último de la SAT.
+                  Al día con tus libros y con la ley.
                 </p>
               </div>
             </div>
@@ -39,10 +39,12 @@ export default function Features() {
                 <span className="flaticon-loan"></span>
               </div>
               <div className="media-body">
-                <h3 className="heading">Financial Services</h3>
+                <h3 className="heading">Ahorra Dinero</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Te cobramos el mejor precio, no importa cuántas facturas.
+                  <br></br>
+                  Profesionales: Q250<br></br>
+                  Peq. Contribuyente: Q100
                 </p>
               </div>
             </div>
@@ -53,10 +55,10 @@ export default function Features() {
                 <span className="flaticon-budget"></span>
               </div>
               <div className="media-body">
-                <h3 className="heading">Growth &amp; Funding Access</h3>
+                <h3 className="heading">Crecimiento Constante</h3>
                 <p>
-                  Even the all-powerful Pointing has no control about the blind
-                  texts it is an almost unorthographic.
+                  Crecemos junto a ti y tus ahorros. Crecemos en servicio y
+                  rapidez. Lo único que no crece es nuestro precio.
                 </p>
               </div>
             </div>

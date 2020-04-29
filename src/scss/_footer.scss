@@ -1,3 +1,60 @@
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer p {
+    color: white;
+}
+
+.highlight {
+    text-decoration: italic;
+}
+
+.profesional-icon,
+.pequeño-icon {
+    height: 10vw;
+    width: 10vw;
+    margin: 3vw;
+    border: 1px solid white;
+    margin-bottom: 0;
+}
+
 .py-1.d-block {
     display: none !important;
+}
+
+.ftco-footer-social li a:hover {
+    color: #fff;
+}
+
+.fa-twitter {
+    content: url('../img/twitter_white.png');
+    opacity: 1;
+    width: 58%;
+
+    &:hover {
+        content: url('../img/twitter_lbrown.png');
+    }
+}
+
+.fa-facebook {
+    content: url('../img/facebook_white.png');
+    opacity: 1;
+    width: 58%;
+
+    &:hover {
+        content: url('../img/facebook_lbrown.png');
+    }
+}
+
+.fa-instagram {
+    content: url('../img/instagram_white.png');
+    opacity: 1;
+    width: 58%;
+
+    &:hover {
+        content: url('../img/instagram_lbrown.png');
+    }
 }

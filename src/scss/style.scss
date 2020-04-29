@@ -3,6 +3,11 @@
 @import 'carousel.scss';
 @import 'footer.scss';
 @import 'presentation.scss';
+@import 'jumbotron.scss';
+@import 'services.scss';
+@import 'blog_blog-section.scss';
+
+
 
 $font-primary: 'Montserrat',
 Arial,
@@ -11,9 +16,11 @@ sans-serif;
 $white: #fff;
 $black: #000000;
 $dark-gray: #252525;
+$light-gray: #f8f9fd;
 $darken: #00043c;
 
-$primary: #1ba12d;
+$primary: #FFE8C2;
+// $primary: #1ba12d;
 $secondary: #8fd0d2;
 
 
@@ -2478,4 +2485,14 @@ textarea.form-control {
 		stroke-dasharray: 89, 200;
 		stroke-dashoffset: -136px;
 	}
+}
+
+/////////////////////
+// CUSTOMIZATIONS///
+///////////////////
+
+
+.vertical-padding-6pc {
+	padding: 3% 0;
+	background: $light-gray;
 }

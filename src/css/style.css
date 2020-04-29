@@ -28,6 +28,14 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --main60: #7ea0bf;
+  --support30: #ffe8c2;
+  /* --main60: #7ea0bf;
+  --support30: #735f40; */
+  /* --main60: #ffe8c2;
+  --support30: #7ea0bf; */
+  --original-gray: #f8f9fd;
+  --original-green: #1ba12d;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -37,6 +45,12 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* :root {
+  --main-bg-color: var(--support30);
+}
+
+#div1 {
+  background-color: var(--support30); */
 *,
 *::before,
 *::after {
@@ -11529,13 +11543,13 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1ba12d;
+  color: var(--support30);
   outline: none !important;
 }
 
@@ -11644,8 +11658,8 @@ h5,
 }
 
 .social-media p a:hover {
-  background: #1ba12d;
-  border-color: #1ba12d;
+  background: var(--support30);
+  border-color: var(--support30);
 }
 
 .social-media p a:hover span {
@@ -11718,7 +11732,7 @@ h5,
   height: 2px;
   bottom: 0px;
   left: 0;
-  background-color: #1ba12d;
+  background-color: var(--support30);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -11730,12 +11744,12 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link:hover:before {
   visibility: visible;
-  background-color: #1ba12d;
+  background-color: var(--support30);
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -11776,7 +11790,7 @@ h5,
 
 .ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu .dropdown-item:hover,
 .ftco-navbar-light .navbar-nav>.nav-item .dropdown-menu .dropdown-item:focus {
-  background: #1ba12d;
+  background: var(--support30);
   color: #fff;
 }
 
@@ -11791,7 +11805,7 @@ h5,
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
   color: #fff;
-  background: #1ba12d;
+  background: var(--support30);
   border-radius: 0px;
 }
 
@@ -11805,18 +11819,18 @@ h5,
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
     color: #fff;
-    background: #1ba12d;
+    background: var(--support30);
     border-radius: 4px;
   }
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.active>a:before {
   visibility: visible;
-  background-color: #1ba12d;
+  background-color: var(--support30);
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -11941,7 +11955,7 @@ h5,
 
 .hero-wrap.hero-wrap-2 .overlay {
   opacity: .6;
-  background: #1ba12d;
+  background: var(--support30);
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
@@ -11966,12 +11980,12 @@ h5,
 }
 
 .hero-wrap .slider-text h1 span {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .hero-wrap .slider-text .subheading {
   font-size: 15px;
-  color: #1ba12d;
+  color: var(--support30);
   text-transform: uppercase;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
@@ -12013,12 +12027,12 @@ h5,
 
 .hero-wrap .slider-text .breadcrumbs span a:hover,
 .hero-wrap .slider-text .breadcrumbs span a:focus {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .hero-wrap .slider-text .breadcrumbs span a:hover i,
 .hero-wrap .slider-text .breadcrumbs span a:focus i {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .owl-carousel {
@@ -12265,7 +12279,7 @@ h5,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: -10px;
-  color: #1ba12d !important;
+  color: var(--support30) !important;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
@@ -12352,7 +12366,7 @@ h5,
 }
 
 .bg-light {
-  background: #f8f9fd !important;
+  background: var(--main60) !important;
 }
 
 .bg-secondary {
@@ -12360,7 +12374,7 @@ h5,
 }
 
 .bg-primary {
-  background: #1ba12d !important;
+  background: var(--support30) !important;
 }
 
 .btn {
@@ -12382,26 +12396,26 @@ h5,
 }
 
 .btn.btn-primary {
-  background: #1ba12d;
-  border: 1px solid #1ba12d;
+  background: var(--support30);
+  border: 1px solid var(--support30);
   color: #fff;
 }
 
 .btn.btn-primary:hover {
-  border: 1px solid #1ba12d;
+  border: 1px solid var(--support30);
   background: transparent;
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .btn.btn-primary.btn-outline-primary {
-  border: 1px solid #1ba12d;
+  border: 1px solid var(--support30);
   background: transparent;
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
   border: 1px solid transparent;
-  background: #1ba12d;
+  background: var(--support30);
   color: #fff;
 }
 
@@ -12456,7 +12470,7 @@ h5,
 
 .icon-video span {
   font-size: 20px;
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .services {
@@ -12520,7 +12534,7 @@ of .icon class and setting position back to static let them show */
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #1ba12d;
+  background: var(--support30);
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
@@ -12575,7 +12589,7 @@ of .icon class and setting position back to static let them show */
 
 .cases-wrap .text .cat {
   text-transform: uppercase;
-  color: #1ba12d;
+  color: var(--support30);
   letter-spacing: 2px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -12633,7 +12647,7 @@ of .icon class and setting position back to static let them show */
   line-height: 1;
   font-weight: 700;
   font-size: 50px;
-  color: #1ba12d;
+  color: var(--support30);
   display: block;
   margin-bottom: 10px;
 }
@@ -12764,7 +12778,7 @@ textarea.form-control {
 
 .block-7 .excerpt {
   margin-bottom: 10px;
-  color: #1ba12d;
+  color: var(--support30);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -12806,7 +12820,7 @@ textarea.form-control {
 
 .block-7 .btn-primary:hover,
 .block-7 .btn-primary:focus {
-  background: #1ba12d !important;
+  background: var(--support30) !important;
   color: #fff;
 }
 
@@ -12824,7 +12838,7 @@ textarea.form-control {
 }
 
 .footer a {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .footer .footer-heading {
@@ -12888,7 +12902,7 @@ textarea.form-control {
 }
 
 .footer .form-consultation .submit {
-  background: #1ba12d !important;
+  background: var(--support30) !important;
   color: #fff !important;
 }
 
@@ -12955,7 +12969,7 @@ textarea.form-control {
 
 .footer-small-nav>li a:hover,
 .footer-small-nav>li a:focus {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 @-webkit-keyframes pulse {
@@ -12996,7 +13010,7 @@ textarea.form-control {
   font-size: 12px;
   display: block;
   font-weight: 600;
-  color: #1ba12d;
+  color: var(--support30);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -13034,7 +13048,7 @@ textarea.form-control {
 }
 
 .aside-stretch-right {
-  background: #1ba12d;
+  background: var(--support30);
 }
 
 .aside-stretch-right:after {
@@ -13044,7 +13058,7 @@ textarea.form-control {
   bottom: 0;
   content: '';
   width: 360%;
-  background: #1ba12d;
+  background: var(--support30);
 }
 
 @media (max-width: 767.98px) {
@@ -13160,7 +13174,7 @@ textarea.form-control {
 }
 
 .testimony-section .owl-dots .owl-dot.active {
-  background: #1ba12d;
+  background: var(--support30);
 }
 
 .testimony-wrap {
@@ -13182,7 +13196,7 @@ textarea.form-control {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #1ba12d;
+  background: var(--support30);
 }
 
 .testimony-wrap .icon span {
@@ -13295,7 +13309,7 @@ textarea.form-control {
 }
 
 .ftco-faqs button[aria-expanded="true"] {
-  background-color: #1ba12d;
+  background-color: var(--support30);
   color: #fff !important;
 }
 
@@ -13398,11 +13412,11 @@ textarea.form-control {
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
 .blog-entry .text .heading a:active {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .blog-entry .text .meta-chat {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .blog-entry .text .read {
@@ -13489,7 +13503,7 @@ textarea.form-control {
 
 .block-27 ul li.active a,
 .block-27 ul li.active span {
-  background: #1ba12d;
+  background: var(--support30);
   color: #fff;
   border: 1px solid transparent;
 }
@@ -13595,7 +13609,7 @@ textarea.form-control {
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
 .block-21 .text .heading a:focus {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .block-21 .text .meta>div {
@@ -13771,7 +13785,7 @@ textarea.form-control {
 
 .subscribe-form .form-group .submit {
   color: #fff !important;
-  background: #1ba12d !important;
+  background: var(--support30) !important;
   border-radius: 0px 5px 5px 0px;
   font-size: 16px;
 }
@@ -13843,17 +13857,17 @@ textarea.form-control {
 .sidelink li a:hover,
 .sidelink li a:focus {
   outline: none;
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .categories li.active a,
 .sidelink li.active a {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 .categories li.active a span,
 .sidelink li.active a span {
-  color: #1ba12d;
+  color: var(--support30);
 }
 
 #ftco-loader {

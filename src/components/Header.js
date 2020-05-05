@@ -28,7 +28,7 @@ const Header = ({ showNav }) => {
           </div>
         </form> */}
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${showNav}`}
           type="button"
           data-toggle="collapse"
           data-target="#ftco-nav"

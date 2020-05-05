@@ -1,11 +1,14 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 @import 'carousel.scss';
+@import 'header.scss';
 @import 'footer.scss';
 @import 'presentation.scss';
 @import 'jumbotron.scss';
 @import 'services.scss';
+@import 'features.scss';
 @import 'blog_blog-section.scss';
+@import 'cta-button.scss';
 
 
 
@@ -1439,8 +1442,8 @@ textarea.form-control {
 		display: inline-block;
 
 		a {
-			height: 40px;
-			width: 40px;
+			height: 37px;
+			width: 37px;
 			display: block;
 			float: left;
 			background: rgba($white, .05);
@@ -2495,4 +2498,22 @@ textarea.form-control {
 .vertical-padding-6pc {
 	padding: 3% 0;
 	background: $light-gray;
+
+}
+
+.show-mobile-only {
+	display: none;
+
+	@media (max-width: 480px) {
+		display: block;
+
+		&.presentation-buffer {
+
+			text-align: center;
+			position: relative;
+			bottom: -1.5pc;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
 }

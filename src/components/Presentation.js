@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Presentation() {
+  const [test, setTry] = useState(0);
+  useEffect(() => {
+    console.log({ test });
+    setTry("string value");
+    console.log({ test });
+  }, []);
+
+  const handleClick = () => {
+    console.log({ test });
+    setTry({ object: "value" });
+    console.log({ test });
+  };
   return (
-    <>
-      <section className="ftco-section ftco-no-pt bg-light">
+    <div onClick={handleClick}>
+      <section className="ftco-section ftco-no-pt bg-light presentation">
         <div className="container">
           <div className="row d-flex no-gutters">
             <div className="col-md-6 d-flex">
@@ -70,7 +82,13 @@ export default function Presentation() {
             </div>
           </div>
         </div>
+        <div className="show-mobile-only presentation-buffer">
+          <h3>
+            Nos dedicamos <span style={{ fontStyle: "italic" }}>sólo</span> a
+            los que facturan
+          </h3>
+        </div>
       </section>
-    </>
+    </div>
   );
 }

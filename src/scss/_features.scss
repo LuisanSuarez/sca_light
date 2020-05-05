@@ -1,0 +1,21 @@
+@media (max-width: 480px) {
+
+    .iconn-container {
+
+        margin: 2% !important;
+
+        p {
+            width: 85%;
+        }
+
+        .media-body {
+            position: static;
+            margin-top: -68px;
+            margin-left: 39px;
+        }
+
+        // &:last-of-type {
+        //     margin-top: 10% !important;
+        // }
+    }
+}

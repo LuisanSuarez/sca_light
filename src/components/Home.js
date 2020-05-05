@@ -8,16 +8,17 @@ import About from "./About";
 import Services from "./Services";
 // import Contact from "./Contact";
 import BlogSection from "./BlogSection";
+import { colors } from "../globalVariables";
 
 export default function Home() {
   return (
     <>
       {/* <Jumbotron /> */}
       <StaticJumbotron />
-      <VerticalPadding />
+      <VerticalPadding backgroundColor={colors.lgray} />
       <Presentation />
       <Features />
-      <VerticalPadding />
+      <VerticalPadding backgroundColor={colors.lgray} />
       <Services />
       {/* <VerticalPadding /> */}
       {/* <About /> */}

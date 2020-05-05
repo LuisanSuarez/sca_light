@@ -1,4 +1,5 @@
 import React from "react";
+import CTAButton from "./CTAButton";
 
 export default function About() {
   return (
@@ -10,12 +11,13 @@ export default function About() {
         id="static-jumbotron-img"
       >
         <div className="d-flex justify-content-center align-content-center flex-column">
-          <h1 style={{ width: "100%", textAlign: "center" }}>
+          <h1 className="text-center" id="jumbo-title">
             Olvídate de tu Contabilidad
           </h1>
-          <h3 style={{ width: "100%", textAlign: "center" }}>
+          <h3 className="text-center" id="jumbo-subtitle">
             Nos preocupamos de tu contabilidad para que tú no te preocupes
           </h3>
+          <CTAButton text="Despreocúpame" />
         </div>
       </div>
     </div>

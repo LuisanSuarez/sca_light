@@ -1,7 +1,120 @@
+// .services .iconn span {
+//     color: #d4eaffed;
+// }
+
 #services-img-1 {
-    background-image: url('..//img/about-2.jpg')
+    background-image: url('../img/about-2.jpg');
+
+    @media (max-width: 480px) {
+        background-image: url('../img/about-3.jpg');
+        transform: scaleX(-1);
+        background-position: 75% center;
+
+    }
 }
 
 #services-img-2 {
-    background-image: url('..//img/about-1.jpg')
+    background-image: url('../img/about-1.jpg');
+
+    @media (max-width: 480px) {
+        transform: scaleX(1);
+    }
+}
+
+#services-img-3 {
+    background-image: url('../img/about-3.jpg');
+    transform: scaleX(-1);
+
+    @media (max-width: 480px) {
+        display: none
+    }
+}
+
+#subtitle-1 {
+    width: 80%;
+}
+
+.highlight {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.main-cta {
+    height: 70vh;
+    margin-top: 8rem;
+
+    & h3 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    & p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    & h6 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        margin-bottom: 0 !important;
+    }
+
+    .services .heading-section {
+        margin-top: 48% !important;
+
+        & p {
+            font-size: 1.2rem;
+        }
+
+        & .highlight {
+            text-align: center;
+            display: table;
+            width: 80%;
+            margin: 0 auto 5%;
+
+            // &::after {
+            //     content: '\A';
+            //     white-space: pre-wrap;
+            // }
+        }
+    }
+
+    #subtitle-1 {
+        width: 90%;
+    }
+
+    #subtitle-3 {
+        text-align: center;
+        margin: 9% auto;
+    }
+
+    ul li {
+        font-size: 1.5rem;
+    }
+
+    .main-cta {
+        height: 120vh;
+        margin-top: 8rem;
+
+        & h3 {
+            font-size: 3rem;
+        }
+
+        & p {
+            font-size: 1.2rem;
+            text-align: left;
+        }
+
+        & h6 {
+            font-size: 2rem;
+            margin-top: 4rem;
+        }
+    }
+
+
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BlogSection() {
   return (
-    <section className="ftco-section">
+    <section className="ftco-section bg-light">
       <div className="container">
         <div className="row justify-content-center pb-5 mb-3">
           <div className="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">

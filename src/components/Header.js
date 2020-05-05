@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ showNav }) => {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      className={`navbar ${showNav} show navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light`}
       id="ftco-navbar"
     >
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Accounting
+          <div className="logo-img"></div>
         </Link>
-        <form action="#" className="searchform order-sm-start order-lg-last">
+        {/* <form action="#" className="searchform order-sm-start order-lg-last">
           <div className="form-group d-flex">
             <input
               type="text"
@@ -26,7 +26,7 @@ const Header = () => {
               <span className="fa fa-search"></span>
             </button>
           </div>
-        </form>
+        </form> */}
         <button
           className="navbar-toggler"
           type="button"

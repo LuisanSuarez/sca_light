@@ -1,14 +1,15 @@
 import React from "react";
+import CTAButton from "./CTAButton";
 
 export default function Services() {
   return (
-    <section className="ftco-section ftco-no-pt bg-light ftco-faqs">
+    <section className="ftco-section ftco-no-pt bg-light ftco-faqs services">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <div className="img-faqs w-100">
               <div
-                className="img mb-4 mb-sm-0"
+                className="img img-1 mb-4 mb-sm-0"
                 id="services-img-1"
                 // style={{ backgroundImage: "url(../img/about-2.jpg);" }}
               ></div>
@@ -17,13 +18,20 @@ export default function Services() {
                 id="services-img-2"
                 // style={{ backgroundImage: "url(../img/about-1.jpg);" }}
               ></div>
+              <div
+                className="img img-3 mb-4 mb-sm-0"
+                id="services-img-3"
+                // style={{ backgroundImage: "url(../img/about-1.jpg);" }}
+              ></div>
             </div>
           </div>
           <div className="col-lg-6 pl-lg-5">
             <div className="heading-section mb-5 mt-5 mt-lg-0">
               {/* <span className="subheading">FAQs</span> */}
               <h2 className="mb-3">¿Por qué empezó S.C.A?</h2>
-              <h3>A los profesionales nos estan dando atol con el dedo.</h3>
+              <h3 id="subtitle-1">
+                A los profesionales nos <br></br>están dando atol con el dedo.
+              </h3>
               <p>
                 Los contadores saben de la contabilidad. Los demás,
                 generalmente, sabemos muy poco. Los contadores saben esto y
@@ -50,7 +58,7 @@ export default function Services() {
                 mantenerse al día con las últimas leyes, pero no es ni cerca de
                 lo que requiere una empresa. No tienes por qué pagar lo mismo.
               </p>
-              <h2>Una solución sólo para profesionales</h2>
+              <h2 id="subtitle-3">Una solución sólo para profesionales</h2>
               <p>
                 Tu contadora no se tarda mucho a veces (¡o se le olvida!) porque
                 no le importas. Tu contador no te cobra caro por ser malo. Están
@@ -59,7 +67,7 @@ export default function Services() {
               </p>
               <p>Nosotros no.</p>
               <p>
-                <span style={{ fontWeight: "bold", display: "inline-block" }}>
+                <span className="highlight">
                   Nosotros nos dedicamos exclusivamente a profesionales como tú.
                 </span>
                 Ponemos toda nuestra atención a la contabilidad que tú
@@ -71,15 +79,6 @@ export default function Services() {
                 <li>Temprano</li>
                 <li>A un precio justo</li>
               </ul>
-              <h3>Olvida tu contabilidad</h3>
-              <p>
-                Estamos para servirte. Entendemos que lo último que quieres
-                hacer con tus horas libres es ver números. Estás aquí porque
-                quieres dejar de preocuparte por la SAT. Quieres la tranquilidad
-                de saber que tu contabilidad está bien hecha y está al día, y
-                que así estará siempre. Lo tenemos muy claro. Nos preocupamos de
-                tu contabilidad para que tú no te preocupes.
-              </p>
             </div>
             {/* <div
               id="accordion"
@@ -232,6 +231,20 @@ export default function Services() {
               </div>
             </div> */}
           </div>
+        </div>
+        <div className="main-cta">
+          <h3 className="text-center mb-4">Olvida tu contabilidad</h3>
+          <p>
+            Estamos para servirte. Entendemos que lo último que quieres hacer
+            con tus horas libres es ver números. Estás aquí porque quieres dejar
+            de preocuparte por la SAT, y de tu contador. Quieres la tranquilidad
+            de saber que tu contabilidad está bien hecha y está al día, y que
+            así estará siempre. Lo tenemos muy claro.
+          </p>
+          <h6 className="text-center">
+            Nos preocupamos de tu contabilidad para que tú no te preocupes.
+          </h6>
+          <CTAButton text="Despreocúpame" />
         </div>
       </div>
     </section>

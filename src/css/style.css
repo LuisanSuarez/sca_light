@@ -29,7 +29,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --main60: #7ea0bf;
-  --support30: #ffe8c2;
+  --support30: #735f40;
   /* --main60: #7ea0bf;
   --support30: #735f40; */
   /* --main60: #ffe8c2;
@@ -43,6 +43,7 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  overflow-x: hidden;
 }
 
 /* :root {
@@ -12366,7 +12367,7 @@ h5,
 }
 
 .bg-light {
-  background: var(--main60) !important;
+  background: var(--original-gray) !important;
 }
 
 .bg-secondary {
@@ -12503,7 +12504,9 @@ of .icon class and setting position back to static let them show */
 
 .services .iconn span {
   font-size: 80px;
-  color: #e6e6e6;
+  /* color: #355573ed; */
+  color: #d4eaffed;
+  ;
 }
 
 @media (min-width: 768px) {
@@ -12834,7 +12837,7 @@ textarea.form-control {
 .footer {
   padding: 0;
   overflow: hidden;
-  background: #252525;
+  background: linear-gradient(#f8f9fd, #f8f9fd, #f8f9fd, #f8f9fd, #f8f9fd, #afd8fe);
 }
 
 .footer a {
@@ -13229,6 +13232,7 @@ textarea.form-control {
   position: relative;
   height: 700px;
   z-index: 0;
+  padding-top: 10%;
 }
 
 .ftco-faqs .img {
@@ -13240,12 +13244,29 @@ textarea.form-control {
   box-shadow: 17px 25px 56px -22px rgba(0, 0, 0, 0.38);
 }
 
-.ftco-faqs .img.img-2 {
-  position: absolute;
+.ftco-faqs .img.img-1 {
+  /* position: absolute; */
   bottom: 0;
   right: 0;
   width: 80%;
-  z-index: -1;
+  z-index: 3;
+}
+
+.ftco-faqs .img.img-2 {
+  position: static;
+  margin-top: -10%;
+  margin-left: 10%;
+  width: 80%;
+  z-index: 2;
+}
+
+.ftco-faqs .img.img-3 {
+  /* position: absolute; */
+  margin-top: -10%;
+  margin-left: 5%;
+  right: 0;
+  width: 80%;
+  z-index: 1;
 }
 
 .ftco-faqs .myaccordion {

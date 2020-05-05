@@ -4,8 +4,8 @@ export default function Features() {
   return (
     <section className="ftco-section bg-light ftco-no-pt">
       <div className="container">
-        <div className="row">
-          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated">
+        <div className="row iconns">
+          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated iconn-container">
             <div className="d-block">
               <div className="iconn d-flex mr-2">
                 <span className="flaticon-accounting-1"></span>
@@ -19,7 +19,7 @@ export default function Features() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated">
+          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated iconn-container">
             <div className="d-block">
               <div className="iconn d-flex mr-2">
                 <span className="flaticon-tax"></span>
@@ -33,7 +33,7 @@ export default function Features() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated">
+          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated iconn-container">
             <div className="d-block">
               <div className="iconn d-flex mr-2">
                 <span className="flaticon-loan"></span>
@@ -44,12 +44,12 @@ export default function Features() {
                   Te cobramos el mejor precio, no importa cuántas facturas.
                   <br></br>
                   Profesionales: Q250<br></br>
-                  Peq. Contribuyente: Q100
+                  Peq. Contribuyente: Q150
                 </p>
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated">
+          <div className="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate fadeInUp ftco-animated iconn-container">
             <div className="d-block">
               <div className="iconn d-flex mr-2">
                 <span className="flaticon-budget"></span>

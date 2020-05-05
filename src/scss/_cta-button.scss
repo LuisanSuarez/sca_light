@@ -1,0 +1,39 @@
+.cta-button {
+  background: rgba(53, 85, 115, 0.95);
+  height: 45px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 5.5rem;
+  width: 26vw;
+  height: 18%;
+  box-shadow: 2px 6px 14px -3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.1s ease-in-out;
+
+  & h4 {
+    color: #fcfcfc;
+    margin: auto;
+    font-size: 3vw;
+    font-weight: bold;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(81, 118, 152, 0.95);
+    transition: background-color 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button {
+    // background: red;
+    width: 73vw;
+    height: 14%;
+    & h4 {
+      font-size: 8vw;
+    }
+  }
+}

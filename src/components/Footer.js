@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BriefcaseIcon from "../icons/Briefcase";
+import PriceCard from "./PriceCard";
 
 const Footer = () => {
   return (
@@ -12,21 +14,74 @@ const Footer = () => {
       <Link to="/blog">Aprende mas</Link> */}
 
       <footer className="footer vh-100">
-        <div className="container-fluid px-lg-5 d-flex flex-column justify-content-end h-100">
-          <div className="row flex-grow-1">
-            <div className="col-md-12 pt-md-5 pt-4 px-lg-5">
+        <div className="container-fluid px-0 d-flex flex-column justify-content-end h-100">
+          <div className="row flex-grow-1 px-lg-5">
+            <div className="col-md-12 pt-md-5 pt-4 px-lg-5 footer-titles">
               <h2>
-                Escríbenos. Este mes tenemos{" "}
-                <span className="highlight">ofertas especiales</span>
+                Contáctanos hoy
+                {/* Este mes tenemos{" "}
+                <span className="font-italic highlight">
+                  ofertas especiales
+                </span> */}
               </h2>
-              <h3>Deja tu contabilidad en manos de profesionales</h3>
+              <h3>y olvídate de una vez tu contabilidad</h3>
               <div className="price-icons d-flex justify-content-center">
-                <div className="profesional-icon"></div>
-                <div className="pequeño-icon"></div>
+                <div className="profesional-icon position-relative">
+                  <BriefcaseIcon fill="white" height="100%" width="100%" />
+                  <div className="d-flex justify-content-center align-items-center position-absolute h-100 w-100 icon fill-alt">
+                    <h4 className="text-center"> Q150</h4>
+                  </div>
+                  <h5 className="text-center"> Peq. Contribuyente</h5>
+                </div>
+                <div className="pequeño-icon position-relative">
+                  <BriefcaseIcon fill="pink" height="100%" width="100%" />
+                  <div className="d-flex justify-content-center align-items-center position-absolute h-100 w-100 icon fill-main">
+                    <h4 className="text-center"> Q250</h4>
+                  </div>
+                  <h5 className="text-center"> Profesional </h5>
+                </div>
+              </div>
+              <div className="price-cards">
+                <PriceCard productName="Peq. Contribuyente" price="Q150" />
+                <PriceCard productName="Profesional" price="Q250" />
               </div>
               <div className="contact-info">
                 <h4>hola@scacontabilidad.com</h4>
-                <h4>+502 5766 5129</h4>
+                <h5>+502 5766 5129</h5>
+                <div className="row justify-content-end">
+                  <ul className="ftco-footer-social p-0">
+                    <li className="ftco-animate fadeInUp ftco-animated">
+                      <a
+                        href="#"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Twitter"
+                      >
+                        <span className="fa fa-twitter"></span>
+                      </a>
+                    </li>
+                    <li className="ftco-animate fadeInUp ftco-animated">
+                      <a
+                        href="#"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Facebook"
+                      >
+                        <span className="fa fa-facebook"></span>
+                      </a>
+                    </li>
+                    <li className="ftco-animate fadeInUp ftco-animated">
+                      <a
+                        href="#"
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Instagram"
+                      >
+                        <span className="fa fa-instagram"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div
@@ -74,45 +129,11 @@ const Footer = () => {
               </form>
             </div>
           </div>
-          <div className="col-md-12 py-5" style={{ flexBasis: "auto" }}>
+          <div className="col-md-12 py-4" className="footer-nav">
             <div className="row ">
               <div className="col-md-12">
                 <div className="row justify-content-center">
                   <div className="col-md-12 col-lg-10">
-                    <div className="row justify-content-center">
-                      <ul className="ftco-footer-social p-0">
-                        <li className="ftco-animate fadeInUp ftco-animated">
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Twitter"
-                          >
-                            <span className="fa fa-twitter"></span>
-                          </a>
-                        </li>
-                        <li className="ftco-animate fadeInUp ftco-animated">
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Facebook"
-                          >
-                            <span className="fa fa-facebook"></span>
-                          </a>
-                        </li>
-                        <li className="ftco-animate fadeInUp ftco-animated">
-                          <a
-                            href="#"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Instagram"
-                          >
-                            <span className="fa fa-instagram"></span>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
                     <div className="row">
                       <div className="col-md-3 mb-md-0 mb-3">
                         <Link to="/inicio">
@@ -217,7 +238,10 @@ const Footer = () => {
 							</div>
 						</div> */}
           </div>
-          <div className="row bg-brown justify-content-center">
+          <div
+            className="row bg-brown justify-content-center"
+            style={{ opacity: 0 }}
+          >
             <div className="row">
               <h3>Contabilidad hecha por profesionales para profesionales</h3>
             </div>

@@ -50,7 +50,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Header showNav={showNav} />
+        <Header showNav={showNav} setShowNav={setShowNav} />
         {/* <Home /> */}
 
         {/* <nav>

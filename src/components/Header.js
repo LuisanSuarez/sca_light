@@ -1,16 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ showNav }) => {
+const Header = ({ showNav, setShowNav }) => {
+  const [showMenu, setShowMenu] = useState("hide");
+
+  useEffect(() => {
+    setShowMenu("hide");
+  }, [showNav]);
+
+  const handlePointerDown = () => {
+    showNav === "hide"
+      ? setShowNav("show")
+      : showMenu === "hide"
+      ? setShowMenu("show")
+      : setShowMenu("hide");
+  };
+
   return (
     <nav
       className={`navbar ${showNav} show navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light`}
       id="ftco-navbar"
     >
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          <div className="logo-img"></div>
-        </Link>
+      <div className="logo-img"></div>
+      <div className="navbar-brand">
+        <div
+          className={`open-menu ${showMenu}`}
+          onPointerDown={handlePointerDown}
+        >
+          <div className="div-filler"></div>
+          <div className={`dropdown-hamburger ${showMenu}`}>
+            <div className="navbar-option">
+              <a href="#">Servicios</a>
+            </div>
+            <div className="navbar-option">
+              <a href="#">Nosotros</a>
+            </div>
+            <div className="navbar-option">
+              <a href="#">Blog</a>
+            </div>
+          </div>
+        </div>
         {/* <form action="#" className="searchform order-sm-start order-lg-last">
           <div className="form-group d-flex">
             <input
@@ -38,7 +67,7 @@ const Header = ({ showNav }) => {
         >
           <span className="fa fa-bars"></span> Menu
         </button>
-        <div className="collapse navbar-collapse" id="ftco-nav">
+        {/* <div className="collapse navbar-collapse" id="ftco-nav">
           <ul className="navbar-nav m-auto">
             <li classNameName="nav-item">
               <Link to="/home" className="nav-link">
@@ -66,7 +95,7 @@ const Header = ({ showNav }) => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

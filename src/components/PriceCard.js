@@ -11,6 +11,22 @@ export default function PriceCard({ productName, price }) {
       <div className="price-card-cta" onClick={handleClick}>
         Llévenme mi conta
       </div>
+      <a
+        className="cta-phonecall"
+        href="tel:+1-303-499-7111"
+        onClick={handleClick}
+      >
+        {""}
+      </a>
+      <a
+        href="mailto:hola@scacontabilidad.com"
+        className="cta-email"
+        onClick={handleClick}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {""}
+      </a>
     </div>
   );
 }

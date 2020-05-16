@@ -10,11 +10,10 @@ import Home from "./components/Home";
 import useDocumentScrollThrottled from "./useDocumentScrollThrottled";
 
 function App() {
-  const [showNav, setShowNav] = useState("hide");
+  const [showNav, setShowNav] = useState("show");
 
   let prevScrollY = 0;
-  const MIN_SCROLL_DIST = 100;
-  const RE_HIDE = 800;
+  const MIN_SCROLL_DIST = 80;
 
   useEffect(() => {
     // initiate the event handler
@@ -29,18 +28,10 @@ function App() {
   function handleScroll(e) {
     const change = window.scrollY - prevScrollY;
 
-    if (window.scrollY > RE_HIDE) {
-      if (change > 0 && change > MIN_SCROLL_DIST) {
-        setShowNav("hide");
-      } else if (change < 0 && change < MIN_SCROLL_DIST) {
-        setShowNav("show");
-      }
-    } else if (window.scrollY < RE_HIDE) {
-      if (change > 0 && change > MIN_SCROLL_DIST) {
-        setShowNav("show");
-      } else if (window.scrollY === 0) {
-        setShowNav("hide");
-      }
+    if (change > 0 && change > MIN_SCROLL_DIST) {
+      setShowNav("hide");
+    } else if (change < 0 && change < MIN_SCROLL_DIST) {
+      setShowNav("show");
     }
 
     prevScrollY =

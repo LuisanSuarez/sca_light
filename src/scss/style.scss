@@ -1739,6 +1739,10 @@ textarea.form-control {
 		position: relative;
 		height: 700px;
 		z-index: 0;
+
+		@media (max-width: 480px) {
+			height: 350px !important;
+		}
 	}
 
 	.img {
@@ -2515,5 +2519,11 @@ textarea.form-control {
 			width: 80%;
 			margin: 0 auto;
 		}
+	}
+}
+
+.hide-mobile {
+	@media (max-width: 480px) {
+		display: none !important;
 	}
 }

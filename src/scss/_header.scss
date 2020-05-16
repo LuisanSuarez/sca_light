@@ -19,11 +19,24 @@
 }
 
 .logo-img {
-    background: url('../img/logo.png');
+    background: url('../img/small_logo.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 3%;
+}
+
+.initials-img {
+    background: url('../img/initials.png');
     background-size: cover;
     height: 40px;
     width: 130px;
     position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+
 }
 
 .navbar-brand {

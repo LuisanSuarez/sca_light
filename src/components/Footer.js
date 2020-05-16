@@ -13,7 +13,7 @@ const Footer = () => {
       <Link to="/contacto">Contacto</Link>
       <Link to="/blog">Aprende mas</Link> */}
 
-      <footer className="footer vh-100">
+      <footer className="footer h-100">
         <div className="container-fluid px-0 d-flex flex-column justify-content-end h-100">
           <div className="row flex-grow-1 px-lg-5">
             <div className="col-md-12 pt-md-5 pt-4 px-lg-5 footer-titles">
@@ -46,7 +46,7 @@ const Footer = () => {
                 <PriceCard productName="Profesional" price="Q250" />
               </div>
               <div className="contact-info">
-                <h4>hola@scacontabilidad.com</h4>
+                <h4>info@scacontabilidad.com</h4>
                 <h5>+502 5766 5129</h5>
                 <div className="row justify-content-end">
                   <ul className="ftco-footer-social p-0">
@@ -135,7 +135,7 @@ const Footer = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-12 col-lg-10">
                     <div className="row">
-                      <div className="col-md-3 mb-md-0 mb-3">
+                      <div className="col-md-3 mb-md-0 mb-3 hide-mobile">
                         <Link to="/inicio">
                           <h2 className="footer-heading">Inicio</h2>
                         </Link>
@@ -239,7 +239,7 @@ const Footer = () => {
 						</div> */}
           </div>
           <div
-            className="row bg-brown justify-content-center"
+            className="row bg-brown justify-content-center hide-mobile"
             style={{ opacity: 0 }}
           >
             <div className="row">

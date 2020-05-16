@@ -13,13 +13,13 @@ export default function PriceCard({ productName, price }) {
       </div>
       <a
         className="cta-phonecall"
-        href="tel:+1-303-499-7111"
+        href="tel:+502-5766-5129"
         onClick={handleClick}
       >
         {""}
       </a>
       <a
-        href="mailto:hola@scacontabilidad.com"
+        href="mailto:info@scacontabilidad.com"
         className="cta-email"
         onClick={handleClick}
         target="_blank"

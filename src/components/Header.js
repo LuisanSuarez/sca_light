@@ -22,6 +22,7 @@ const Header = ({ showNav, setShowNav }) => {
       id="ftco-navbar"
     >
       <div className="logo-img"></div>
+      <div className="initials-img"></div>
       <div className="navbar-brand">
         <div
           className={`open-menu ${showMenu}`}

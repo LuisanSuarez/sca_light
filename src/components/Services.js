@@ -14,7 +14,7 @@ export default function Services() {
                 // style={{ backgroundImage: "url(../img/about-2.jpg);" }}
               ></div>
               <div
-                className="img img-2 mb-4 mb-sm-0"
+                className="img img-2 mb-4 mb-sm-0 hide-mobile"
                 id="services-img-2"
                 // style={{ backgroundImage: "url(../img/about-1.jpg);" }}
               ></div>
@@ -28,31 +28,31 @@ export default function Services() {
           <div className="col-lg-6 pl-lg-5">
             <div className="heading-section mb-5 mt-5 mt-lg-0">
               {/* <span className="subheading">FAQs</span> */}
-              <h2 className="mb-3">¿Por qué empezó S.C.A?</h2>
-              <h3 id="subtitle-1">
+              <h2 className="mb-3 hide-mobile">¿Por qué empezó S.C.A?</h2>
+              <h3 id="subtitle-1" className="hide-mobile">
                 A los profesionales nos <br></br>están dando atol con el dedo.
               </h3>
-              <p>
+              <p className="hide-mobile">
                 Los contadores saben de la contabilidad. Los demás,
                 generalmente, sabemos muy poco. Los contadores saben esto y
                 aprovechan para cobrarnos caro.
               </p>
-              <p>
+              <p className="hide-mobile">
                 Eso no es 100% cierto. Es verdad que los contadores saben más
                 que nosotros, pero no todos están intentando estafarte. Lo que
                 pasa es que su tiempo es valioso.{" "}
               </p>
-              <p>
+              <p className="hide-mobile">
                 Las empresas grandes llevan una contabilidad muy complicada.
                 Toma mucho tiempo y conocimiento asegurar que esos números estén
                 correctos. Para un contador vale más la pena trabajar con
                 empresas grandes por una simple razón: el conocimiento y el
                 esfuerzo se reflejan en el precio.
               </p>
-              <h3>
+              <h3 className="hide-mobile">
                 ¡Pero si yo sólo facturo! No quiero una contabilidad compleja
               </h3>
-              <p>
+              <p className="hide-mobile">
                 Y tienes toda la razón. Como profesional, tu contabilidad es
                 mucho más simple. Requiere conocimientos de contabilidad y
                 mantenerse al día con las últimas leyes, pero no es ni cerca de

@@ -8,7 +8,7 @@ export default function CTAButton({ text }) {
     <div className="cta-button d-flex justify-content-center align-content-center">
       <a
         className="cta-phonecall"
-        href="tel:+502-5766-5129"
+        href="https://wa.me/50257665129"
         // onClick={handleClick}
       >
         {""}

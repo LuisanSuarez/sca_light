@@ -13,8 +13,8 @@ const Footer = () => {
       <Link to="/contacto">Contacto</Link>
       <Link to="/blog">Aprende mas</Link> */}
 
-      <footer className="footer h-100">
-        <div className="container-fluid px-0 d-flex flex-column justify-content-end h-100">
+      <footer className="footer position-relative h-100">
+        <div className="container-fluid px-0 d-flex flex-column justify-content-end vh-100">
           <div className="row flex-grow-1 px-lg-5">
             <div className="col-md-12 pt-md-5 pt-4 px-lg-5 footer-titles">
               <h2>
@@ -43,90 +43,95 @@ const Footer = () => {
               </div>
               <div className="price-cards">
                 <PriceCard productName="Peq. Contribuyente" price="Q150" />
-                <PriceCard productName="Profesional" price="Q250" />
+                <PriceCard
+                  productName={`100% gratis si no facturas`}
+                  price="Q0"
+                  identifier="free-offer"
+                />
+                <PriceCard productName="IVA General" price="Q250" />
               </div>
-              <div className="contact-info">
-                <h4>info@scacontabilidad.com</h4>
-                <h5>+502 5766 5129</h5>
-                <div className="row justify-content-end">
-                  <ul className="ftco-footer-social p-0">
-                    <li className="ftco-animate fadeInUp ftco-animated">
-                      <a
-                        href="#"
-                        data-toggle="tooltip"
-                        data-placement="top"
-                        title="Twitter"
-                      >
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li className="ftco-animate fadeInUp ftco-animated">
-                      <a
-                        href="#"
-                        data-toggle="tooltip"
-                        data-placement="top"
-                        title="Facebook"
-                      >
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li className="ftco-animate fadeInUp ftco-animated">
-                      <a
-                        href="#"
-                        data-toggle="tooltip"
-                        data-placement="top"
-                        title="Instagram"
-                      >
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div
+                className="col-md-4 py-md-5 py-4 aside-stretch-right pl-lg-5"
+                style={{ display: "none" }}
+              >
+                <h2 className="footer-heading">Free consultation</h2>
+                <form action="#" className="form-consultation">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Subject"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="3"
+                      className="form-control"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div className="form-group">
+                    <button type="submit" className="form-control submit px-3">
+                      Send A Message
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
-            <div
-              className="col-md-4 py-md-5 py-4 aside-stretch-right pl-lg-5"
-              style={{ display: "none" }}
-            >
-              <h2 className="footer-heading">Free consultation</h2>
-              <form action="#" className="form-consultation">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="3"
-                    className="form-control"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div className="form-group">
-                  <button type="submit" className="form-control submit px-3">
-                    Send A Message
-                  </button>
-                </div>
-              </form>
+            <div className="contact-info">
+              <h4>info@scacontabilidad.com</h4>
+              <h5>+502 5766 5129</h5>
+              <div className="row justify-content-center">
+                <ul className="ftco-footer-social p-0">
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Twitter"
+                    >
+                      <span className="fa fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Facebook"
+                    >
+                      <span className="fa fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Instagram"
+                    >
+                      <span className="fa fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="col-md-12 py-4" className="footer-nav">

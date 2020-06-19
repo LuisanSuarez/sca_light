@@ -14,7 +14,7 @@ export default function CTAButton({ text }) {
         {""}
       </a>
       <a
-        href="mailto:info@scacontabilidad.com"
+        href="https://wa.me/50257665129"
         className="cta-email"
         // onClick={handleClick}
         target="_blank"

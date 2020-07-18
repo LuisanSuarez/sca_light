@@ -239,8 +239,9 @@ export default function Services() {
             con tus horas libres es ver números. Estás aquí porque quieres dejar
             de preocuparte por la SAT, y de tu contador. Quieres la tranquilidad
             de saber que tu contabilidad está bien hecha y está al día, y que
-            así estará siempre. Lo tenemos muy claro.
+            así estará siempre.{" "}
           </p>
+          <p>Lo tenemos muy claro.</p>
           <h6 className="text-center">
             Nos preocupamos de tu contabilidad para que tú no te preocupes.
           </h6>

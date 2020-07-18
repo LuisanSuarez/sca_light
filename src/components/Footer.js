@@ -25,22 +25,6 @@ const Footer = () => {
                 </span> */}
               </h2>
               <h3>y olvídate de una vez tu contabilidad</h3>
-              <div className="price-icons d-flex justify-content-center">
-                <div className="profesional-icon position-relative">
-                  <BriefcaseIcon fill="white" height="100%" width="100%" />
-                  <div className="d-flex justify-content-center align-items-center position-absolute h-100 w-100 icon fill-alt">
-                    <h4 className="text-center"> Q150</h4>
-                  </div>
-                  <h5 className="text-center"> Peq. Contribuyente</h5>
-                </div>
-                <div className="pequeño-icon position-relative">
-                  <BriefcaseIcon fill="pink" height="100%" width="100%" />
-                  <div className="d-flex justify-content-center align-items-center position-absolute h-100 w-100 icon fill-main">
-                    <h4 className="text-center"> Q250</h4>
-                  </div>
-                  <h5 className="text-center"> Profesional </h5>
-                </div>
-              </div>
               <div className="price-cards">
                 <PriceCard productName="Peq. Contribuyente" price="Q150" />
                 <PriceCard
@@ -96,38 +80,57 @@ const Footer = () => {
               </div>
             </div>
             <div className="contact-info">
-              <h4>info@scacontabilidad.com</h4>
-              <h5>+502 5766 5129</h5>
+              <h4>
+                <a
+                  href="mailto:info@scacontabilidad.com"
+                  className="white-hover-lbrown"
+                  target="_blank"
+                >
+                  info@scacontabilidad.com
+                </a>
+              </h4>
+              <h5>
+                <a
+                  href="https://wa.me/50257665129"
+                  className="white-hover-lbrown"
+                  target="_blank"
+                >
+                  +502 5766 5129
+                </a>
+              </h5>
               <div className="row justify-content-center">
                 <ul className="ftco-footer-social p-0">
                   <li className="ftco-animate fadeInUp ftco-animated">
                     <a
-                      href="#"
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Twitter"
-                    >
-                      <span className="fa fa-twitter"></span>
-                    </a>
-                  </li>
-                  <li className="ftco-animate fadeInUp ftco-animated">
-                    <a
-                      href="#"
+                      href="https://www.facebook.com/SCA-Contable-105880374442038/?"
                       data-toggle="tooltip"
                       data-placement="top"
                       title="Facebook"
+                      target="_blank"
                     >
                       <span className="fa fa-facebook"></span>
                     </a>
                   </li>
                   <li className="ftco-animate fadeInUp ftco-animated">
                     <a
-                      href="#"
+                      href="https://www.instagram.com/sca_contabilidad/"
                       data-toggle="tooltip"
                       data-placement="top"
                       title="Instagram"
+                      target="_blank"
                     >
                       <span className="fa fa-instagram"></span>
+                    </a>
+                  </li>
+                  <li className="ftco-animate fadeInUp ftco-animated">
+                    <a
+                      href="https://www.linkedin.com/company/65518770/"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="LinkedIn"
+                      target="_blank"
+                    >
+                      <span className="fa fa-linkedin"></span>
                     </a>
                   </li>
                 </ul>

@@ -45,13 +45,13 @@ export default function Presentation() {
               </div>
               <div className="services-2 w-100 d-flex">
                 <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="flaticon-wealth"></span>
+                  <span className="flaticon-free"></span>
                 </div>
                 <div className="text pl-4">
-                  <h4>Te devolvemos tu IVA</h4>
+                  <h4>100% gratis si no facturas</h4>
                   <p>
-                    Tienes derecho a recuperar dinero que ya pagaste en
-                    impuestos. Calculamos cuánto dinero te pertenece al centavo.
+                    Sea un mes o un año entero, si no facturas no te cobramos
+                    absolutamente nada.
                   </p>
                 </div>
               </div>
@@ -62,8 +62,8 @@ export default function Presentation() {
                 <div className="text pl-4">
                   <h4>Recogemos tus facturas</h4>
                   <p>
-                    Incluido en nuestro precio. Mensajero, por correo, por
-                    whatsapp. Cómo tu prefieras, nosotros te acomodamos.
+                    Incluido en nuestro precio. Con mensajero, por correo, o por
+                    WhatsApp. Como tú prefieras.
                   </p>
                 </div>
               </div>

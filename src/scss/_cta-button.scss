@@ -1,5 +1,8 @@
+@use './variables.scss';
+
 .cta-button {
-  background: rgba(53, 85, 115, 0.95);
+  background: $blue;
+  opacity: 0.95;
   height: 45px;
   border-radius: 20px;
   margin: auto;
@@ -18,7 +21,7 @@
     transition: color 0.1s ease-in-out;
 
     &:hover {
-      transition: color 0.2s ease-in-out;
+      transition: color 0.25s ease-in-out;
     }
 
   }
@@ -54,7 +57,7 @@
 
 
   &:hover {
-    background-color: rgba(81, 118, 152, 0.95);
+    background-color: $hover-blue;
     transition: background-color 0.2s ease-in-out;
   }
 }

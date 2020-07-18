@@ -1,3 +1,5 @@
+@use './variables.scss';
+
 .footer h1,
 .footer h2,
 .footer h3,
@@ -53,19 +55,11 @@
   margin-bottom: 20px;
 }
 
-.fill-main {
-  color: pink;
-}
-
-.fill-alt {
-  color: white;
-}
-
 .contact-info {
   position: absolute;
   bottom: -2%;
-  background: rgba(53, 85, 115, 1);
-  box-shadow: 6px 7px 11px -3px rgba(53, 85, 115, 0.6);
+  background: $blue;
+  box-shadow: 6px 7px 11px -3px $shadow-blue;
   z-index: 3;
   padding: 10px 30px 4px 30px;
   border-radius: 12px;
@@ -82,6 +76,14 @@
 
   & h5 {
     font-size: 1.4rem;
+  }
+
+  .white-hover-lbrown {
+    color: white;
+
+    &:hover {
+      color: $light-brown;
+    }
   }
 }
 
@@ -104,7 +106,7 @@
 }
 
 .price-card {
-  box-shadow: 2px 9px 14px 1px rgba(53, 85, 115, 0.3);
+  box-shadow: 2px 9px 14px 1px $shadow-blue-lighter;
   height: 320px;
   width: 220px;
   margin: 20px 5%;
@@ -112,7 +114,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(248, 249, 251, 0.3);
+  background: $gray-transparent;
   border-radius: 20px;
   padding: 37px 0;
 
@@ -131,7 +133,7 @@
   }
 
   & h3 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     background: rgba(115, 95, 64, 1);
     border-radius: 100%;
     height: 107px;
@@ -141,7 +143,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
-    padding: 0px 5px 3px 0;
+    padding: 0px 5px 3px 3px;
+  }
+
+  & .tiny-text {
+    font-size: 10px;
+    margin: auto 0 38.5%;
+    ;
   }
 }
 
@@ -155,15 +163,20 @@
   justify-content: center;
   border-radius: 0 0 20px 20px;
   color: white;
-  background-color: rgba(53, 85, 115, 0.95);
+  background-color: $blue;
+  opacity: 0.95;
   align-items: center;
   padding-bottom: 7px;
   transition: color 0.15s ease-in-out;
+  z-index: 10;
 
   // &:hover,
   &:hover {
-    color: #ffe8c2;
-    transition: color 0.3s ease-in-out;
+    // color: #ffe8c2;
+    color: $light-brown;
+    // background-color: rgba(81, 118, 152, 0.95);
+    background-color: $hover-blue;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -195,13 +208,13 @@
   }
 }
 
-.fa-twitter {
-  content: url("../img/twitter_white.png");
+.fa-linkedin {
+  content: url("../img/linkedin_white.png");
   opacity: 1;
   width: 58%;
 
   &:hover {
-    content: url("../img/twitter_lbrown.png");
+    content: url("../img/linkedin_lbrown.png");
   }
 }
 

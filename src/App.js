@@ -73,10 +73,10 @@ function App() {
           <Route path="/contacto">
             <Contact />
           </Route> */}
-          <Route exact path="/blog">
-            {/* <Blog /> */}
-            <Home />
-          </Route>
+          {/* <Route exact path="/blog"> */}
+          {/* <Blog /> */}
+          <Home />
+          {/* </Route> */}
         </Switch>
         <Footer />
       </div>

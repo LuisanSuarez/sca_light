@@ -10,11 +10,11 @@ export default function PriceCard({ productName, price, identifier }) {
 
       <h5>{productName}</h5>
       <div className="price-card-cta">Llévenme mi conta</div>
-      <a className="cta-phonecall" href="https://wa.me/50257665129">
+      <a className="cta-phonecall" href="https://wa.me/50237620782">
         {""}
       </a>
       <a
-        href="https://wa.me/50257665129"
+        href="https://wa.me/50237620782"
         className="cta-email"
         target="_blank"
         rel="noopener noreferrer"

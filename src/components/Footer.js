@@ -91,11 +91,11 @@ const Footer = () => {
               </h4>
               <h5>
                 <a
-                  href="https://wa.me/50257665129"
+                  href="https://wa.me/50237620782"
                   className="white-hover-lbrown"
                   target="_blank"
                 >
-                  +502 5766 5129
+                  +502 3762 0782
                 </a>
               </h5>
               <div className="row justify-content-center">
